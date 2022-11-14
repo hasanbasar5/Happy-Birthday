@@ -1,0 +1,204 @@
+body
+{
+  background-image: linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card {
+	 position: relative;
+	 width: 300px;
+	 height: 425px;
+	 border: 10px solid #9612eb;
+	 margin: 60px auto 0 auto;
+	 box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    background-image:  url(./card\ img-3.jpg);
+
+background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+	 background-color: #e6f0e6;
+}
+ .card .text-container {
+	 width: 80%;
+	 height: 80%;
+	 margin: auto;
+}
+ .strikethrough {
+	 text-decoration: line-through;
+}
+ .card .text-container #head {
+	 font-family: 'Nobile', sans-serif;
+	 font-size: 3.5em;
+	 margin: 20px auto 60px auto;
+	 font-weight: bolder;
+}
+span{
+	font-weight: bold;
+}
+#head{
+	color:blue;
+	animation-name: anii;
+	animation-duration: 10s;
+	z-index: -1;
+
+}
+@keyframes ani {
+	0%{
+		transform:translateY(-500px);
+		color: blue;
+		background-image: url(./card\ \ img-1.jpg);
+		background-size: cover;
+		background-position: center;
+		
+
+	}
+/* 	10%{
+		transform:translateY(-400px);
+		color: #55108c;
+	} */
+	20%{
+		transform:translateY(-3000px);
+		color: #54108c00;
+		background-image: url(./card\ \ img-1.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+/* 	30%{
+		transform:translateY(-200px);
+		color: #55108c;
+	} */
+	40%{
+		transform:translateY(0px);
+		color: #55108c;
+		background-image: url(./card\ \ img-1.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	50%{
+		transform:translateY(0px);
+		color: #55108c;
+		background-image: url(./card\ \ img-1.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	60%{
+		transform:translateY(0px);
+		color: #55108c;
+		background-image: url(./InShot_20210517_150353383.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	70%{
+		transform:translateY(0px);
+		color: #55108c;
+		background-image: url(./InShot_20210517_150353383.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	80%{
+		transform:translateY(0px);
+		color: #55108c;
+		background-image: url(./InShot_20210517_150353383.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	90%{
+		transform:translateY(0px);
+		background-image: url(./InShot_20210517_150353383.jpg);
+		background-size: cover;
+		background-position: center;
+		
+	}
+	100%{
+		transform:translateY(0px);
+		color: #55108c;
+		background-image: url(./InShot_20210517_150353383.jpg);
+		background-size: cover;
+		background-position: center;
+		background-origin: content-box;
+		
+	}
+
+}
+ .card p {
+	 font-size: 1.1em;
+	 line-height: 1.4;
+	 font-family: 'Nobile';
+	 color: #331717;
+	 font-style: italic;
+	 text-align: center;
+	 margin: 30px auto 0px auto;
+}
+ .card .front {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 margin: -10px 0px 0px -10px;
+	 border: 10px solid #9612eb;
+	 backface-visibility: hidden;
+	 background-color: #9612eb;
+	/* background-image: url($cover-image);
+	 */
+	 background-size: contain;
+	 transform-style: preserve-3d;
+	 transform-origin: 0% 50%;
+	 transform: perspective(800px) rotateY(0deg);
+	 transition: all 0.8s ease-in-out;
+}
+ .card:hover .front {
+	 transform: perspective(800px) rotateY(-170deg);
+	 background-color: red;
+}
+ .card:hover .back {
+	 transform: perspective(800px) rotateY(-170deg);
+	 box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	 background-image: url(./card\ img-2.jpg);
+	 background-size: cover;
+	background-position: center;
+	animation: one 10s ;
+
+}
+@keyframes one {
+	from{
+		background-image: url(./card\ \ img-1.jpg);
+		background-size: cover;
+	   background-position: center;
+	}
+	to{
+		background-image: url(./InShot_20210517_150353383.jpg);
+		background-size: cover;
+	   background-position: center;
+	}
+}
+ .card .back {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 border: 10px solid #9612eb;
+	 margin: -10px 0px 0px -10px;
+	 backface-visibility: visible;
+	 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+	 transform-style: preserve-3d;
+	 transform-origin: 0% 50%;
+	 transform: perspective(800px) rotateY(0deg);
+	 transition: all 0.8s ease-in-out;
+	 background-image: url(./card\ \ img-1.jpg);
+	 background-position: center;
+	 background-size: cover;
+	 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.imgset
+{
+  position: relative;
+  z-index: 1;
+  margin-bottom: -215px;
+}
+.imgset img
+{
+    box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
